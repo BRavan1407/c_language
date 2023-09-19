@@ -4,7 +4,7 @@ void main()
 {
     int num1,num2;
     float num3,num4;
-    char a,b;
+    char char1,char2;
 
     /*printf("\n\nEnter any two Interger numbers : \n" );
     
@@ -22,13 +22,13 @@ void main()
     printf("\nNumber 2 - ");
     scanf("%f",&num4);*/
 
-    printf("\nEnter any two names (Maximum 10 charecters):\n ");
+    printf("\nEnter any two Charecters:  ");
 
-    printf("\nName 1 - ");
-    scanf("%c",&a);
+    printf("\nCharecter 1 - ");
+    scanf("%c",&char1);
 
-    printf("\nName 2 - ");
-    scanf("%c",&b);
+    printf("\nCharecter 2 - ");
+    scanf("%c",&char2);
 
     printf("\nThanks for Visit");
 
