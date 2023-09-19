@@ -1,3 +1,4 @@
+//Print all types of variables
 #include<stdio.h>
 void main()
 {

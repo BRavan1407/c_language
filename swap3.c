@@ -1,3 +1,4 @@
+// For swap two numbers using three numbers
 #include<stdio.h>
 void main()
 {
