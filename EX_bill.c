@@ -18,10 +18,10 @@ void main()
 
     printf("\n\nYou had given %.2f units at %.2f rs/unit with %.1f percent of GST.",unit,rs_unit,gst);
 
-    bill=(unit*rs_unit)*gst*(100);
+    bill=(unit*rs_unit);
+    gst=(bill*gst)/100;
 
-
-    printf("Your final amount of Bill : %.2f",bill);
+    printf("Your final amount of Bill : %.2f",bill+gst);
 
 
 }
