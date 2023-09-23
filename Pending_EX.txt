@@ -1,7 +1,5 @@
-Check if a character is a vowel or a consonant.
 
-write a program to check bmi conditions.
-condition:  https://www.cdc.gov/healthyweight/images/assessing/bmi-adult-fb-600x315.jpg?_=07167
+
 
 Check if a triangle is equilateral, isosceles, or scalene. (lenth)
 
