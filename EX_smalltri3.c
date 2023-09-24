@@ -1,3 +1,5 @@
+// write  program to find area of three triangle and check smaller .
+
 #include <stdio.h>
 void main()
 {
@@ -51,34 +53,55 @@ void main()
 
     printf("\n\nArea of Triangle 3 is = %.2f", area3);
 
+    // Conditions
 
     if (area1 < area2)
     {
         if (area1 < area3)
         {
-            printf("\n\nArea of triangle 1 is smallest.");
+            printf("\n\nArea of triangle 1 is smaller.");
         }
         else
         {
-            printf("\n\nArea of triangle 1 and triangle 3 are same.");
+            if (area1 == area3)
+            {
+                printf("\n\nArea of triangle 1 and triangle 3 are same.");
+            }
+            else
+            {
+                printf("\n\nArea of triangle 3 is smaller.");
+            }
         }
     }
 
-    else if (area2 < area3)
+    else if (area2 < area1)
     {
-        printf("\n\nArea of triangle 2 is smaller.");
+        if (area2 < area3)
+        {
+            printf("\n\nArea of triangle 2 is smaller.");
+        }
+        else
+        {
+            if (area2 == area3)
+            {
+                printf("\n\nArea of triangle 2 and triangle 3 are same.");
+            }
+            else
+            {
+                printf("\n\nArea of triangle 3 is smaller.");
+            }
+        }
     }
+
     else
     {
-        if (area3 < area2)
+        if (area1 == area2 && area1 == area3)
         {
-            printf("\n\nArea of triangle 3 is smaller.");
+            printf("\n\nAll area of triangles are same.");
         }
         else
         {
-            printf("\n\nArea of triangle 2 and triangle 3 are same.");
-
+            printf("\n\nArea of triangle 1 and triangle 2 are same.");
         }
-        
     }
 }
