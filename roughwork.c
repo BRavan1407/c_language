@@ -1,84 +1,60 @@
-#include <stdio.h>
+#include<stdio.h>
 void main()
 {
-    float area1, area2, area3, height, base;
+    char letter;
 
-    // Triangle 1
+    printf("Enter Letter ");
+    scanf("%c", &letter);
 
-    printf("Enter given details to find area of triangle 1 :\n\n");
+    printf("\nLetter is %c \n\n", letter);
 
-    printf("Enter Height :");
-    scanf("%f", &height);
-
-    printf("\nEnter base :");
-    scanf("%f", &base);
-
-    printf("\n\nYou had entered height %.2f and base %.2f", height, base);
-
-    area1 = 0.5 * height * base;
-
-    printf("\n\nArea of Triangle 1 is = %.2f", area1);
-
-    // Triangle 2
-
-    printf("\n\nEnter given details to find area of triangle 2 :\n\n");
-
-    printf("Enter Height :");
-    scanf("%f", &height);
-
-    printf("\nEnter base :");
-    scanf("%f", &base);
-
-    printf("\n\nYou had entered height %.2f and base %.2f", height, base);
-
-    area2 = 0.5 * height * base;
-
-    printf("\n\nArea of Triangle 2 is = %.2f", area2);
-
-    // Triangle 3
-
-    printf("\n\nEnter given details to find area of triangle 3 :\n\n");
-
-    printf("Enter Height :");
-    scanf("%f", &height);
-
-    printf("\nEnter base :");
-    scanf("%f", &base);
-
-    printf("\n\nYou had entered height %.2f and base %.2f", height, base);
-
-    area3 = 0.5 * height * base;
-
-    printf("\n\nArea of Triangle 3 is = %.2f", area3);
-
-
-    if (area1 < area2)
+    switch(letter)
     {
-        if (area1 < area3)
-        {
-            printf("\n\nArea of triangle 1 is smallest.");
-        }
-        else
-        {
-            printf("\n\nArea of triangle 1 and triangle 3 are same.");
-        }
-    }
 
-    else if (area2 < area3)
-    {
-        printf("\n\nArea of triangle 2 is smaller.");
-    }
-    else
-    {
-        if (area3 < area2)
-        {
-            printf("\n\nArea of triangle 3 is smaller.");
-        }
-        else
-        {
-            printf("\n\nArea of triangle 2 and triangle 3 are same.");
+        case 'a':
+            printf("Letter is Vowel ");
+        break;
 
-        }
-        
+        case 'e':
+            printf("Letter is Vowel ");
+        break;  
+
+        case 'i':
+            printf("Letter is Vowel ");
+        break;
+
+        case 'o':
+            printf("Letter is Vowel ");
+        break;
+
+        case 'u':
+            printf("Letter is Vowel ");
+        break;
+
+        case 'A':
+            printf("Letter is Vowel ");
+        break;
+
+        case 'E':
+            printf("Letter is Vowel ");
+        break;
+
+        case 'I':
+            printf("Letter is Vowel ");
+        break;
+
+        case 'O':
+            printf("Letter is Vowel ");
+        break;
+
+        case 'U':
+            printf("Letter is Vowel ");
+        break;
+
+        default:
+            printf("Letter is consonant");
+        break;
+
     }
-}
+    printf("\n\nGood bye");
+} 
