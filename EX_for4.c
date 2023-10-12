@@ -8,8 +8,6 @@
 
 */
 
-// This program had a error
-
 #include <stdio.h>
 void main()
 {
@@ -19,11 +17,19 @@ void main()
 
     for (b = 1; b <= 6; b++)
     {
-        for (a = 1; a <= b; a++)
+        for (a = 1; a <= c; a++)
         {
-            printf("* ");
-            c--;
+            if (a == 1 || b == 1 || a == c)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
         }
+
         printf("\n");
+        c--;
     }
 }
