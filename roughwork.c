@@ -1,60 +1,48 @@
-#include<stdio.h>
+#include <stdio.h>
+
+struct tri
+{
+    float height;
+    float base;
+    float area;
+};
+
+void triAngle(float base, float height)
+{
+    float area;
+
+    printf("\nEnter height : ");
+    scanf("%f", &height);
+
+    printf("\nEnter base :");
+    scanf("%f", &base);
+
+    area = height * base * 0.5;
+}
+
 void main()
 {
-    char letter;
+    int num;
+    float area;
 
-    printf("Enter Letter ");
-    scanf("%c", &letter);
+    printf("\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
 
-    printf("\nLetter is %c \n\n", letter);
+    printf("\nEnter asked details to find area of triangle :");
 
-    switch(letter)
+    printf("\nEnter numbers of triangle : ");
+    scanf("%d", &num);
+
+    struct tri t[num];
+
+    for (int i = 0; i < num; i++)
     {
-
-        case 'a':
-            printf("Letter is Vowel ");
-        break;
-
-        case 'e':
-            printf("Letter is Vowel ");
-        break;  
-
-        case 'i':
-            printf("Letter is Vowel ");
-        break;
-
-        case 'o':
-            printf("Letter is Vowel ");
-        break;
-
-        case 'u':
-            printf("Letter is Vowel ");
-        break;
-
-        case 'A':
-            printf("Letter is Vowel ");
-        break;
-
-        case 'E':
-            printf("Letter is Vowel ");
-        break;
-
-        case 'I':
-            printf("Letter is Vowel ");
-        break;
-
-        case 'O':
-            printf("Letter is Vowel ");
-        break;
-
-        case 'U':
-            printf("Letter is Vowel ");
-        break;
-
-        default:
-            printf("Letter is consonant");
-        break;
-
+        triAngle(t[i].height, t[i].base);
     }
-    printf("\n\nGood bye");
-} 
+
+    printf("\n----------Area of entered triangle is %.2f.----------\n\n", area);
+
+    // triAngle(t[1].height, t[1].base);
+    // triAngle(t[2].height, t[2].base);
+    // triAngle(t[3].height, t[3].base);
+    // triAngle(t[4].height, t[4].base);
+}
