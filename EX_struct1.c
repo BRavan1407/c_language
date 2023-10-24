@@ -34,13 +34,12 @@ void main()
     // for (int i = 1; i <=num; i++)
     // {
     // }
-    
 
     struct triangle T[num];
 
     for (int i = 0; i < num; i++)
     {
-        printf("\nDetails for triangle %d.",(i+1));
+        printf("\nDetails for triangle %d.", (i + 1));
 
         triangleArea(T[i].height, T[i].base);
     }
