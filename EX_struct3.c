@@ -1,3 +1,34 @@
+/*
+
+number of student = ?
+
+get Value from user :
+
+name :
+age :
+Weight:
+Number :
+Email :
+
+print Value :
+
+|||||||||||||||||||||||student 1 ||||||||||||||||||||||||
+no : 1
+name : abc
+age : 13
+Weight: 40.36
+Number : 75412596325
+Email : abc@gmail.com
+|||||||||||||||||||||||student 2 ||||||||||||||||||||||||
+no : 1
+name : abc
+age : 13
+Weight: 40.36
+Number : 75412596325
+Email : abc@gmail.com
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -51,16 +82,7 @@ void main()
         printf("\n|||||||||||||||||| Student %d ||||||||||||||||||\n", (i + 1));
         printf("\nStudent No     : %d", (i + 1));
         printf("\nStudent Name   : %s", s1[i].name);
-
-        if (s1[i].age >= 0 && s1[i].age <= 150)
-        {
-            printf("\nStudent Age    : %d", s1[i].age);
-        }
-        else
-        {
-            printf("\nStudent Age    : Invalid Age");
-        }
-
+        printf("\nStudent Age    : %d", s1[i].age);
         printf("\nStudent weight : %.2f", s1[i].weight);
         printf("\nStudent Number : %s", s1[i].number);
         printf("\nStudent E-mail : %s\n\n", s1[i].email);
